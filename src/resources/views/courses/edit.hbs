@@ -1,0 +1,40 @@
+<div class='mt4'>
+    <h3>Cập nhật sach</h3>
+    <form method='POST' action='/courses/{{course._id}}?_method=PUT'>
+        <div class='form-group'>
+            <label for='name' class='form-label'>Tên</label>
+            <input type='text' value='{{course.name}}' name='name' class='form-control' id='name' />
+        </div>
+        <div class='form-group'>
+            <label for='image' class='form-label'>Image</label>
+            <input type='text' value='{{course.image}}' name='image' class='form-control' id='image' />
+        </div>
+           <div class='form-group'>
+            <label for='author' class='form-label'>Tác giả</label>
+            <input type='text'  value='{{course.author}}' name='author' class='form-control' id='author' />
+        </div>
+           <div class='form-group'>
+            <label for='type' class='form-label'>Loại</label>
+            <input type='text'  value='{{course.type}}' name='type' class='form-control' id='type' />
+        </div>
+        <div class='form-group'>
+            <label for='price' class='form-label'>Giá</label>
+            <input type='text'  step="any"  value='{{course.price}}' name='price' class='form-control' id='price' />
+        </div>
+        <div class='form-group'>
+            <label for='pricesale' class='form-label'>Giá Giảm</label>
+            <input type='text'  step="any"  value='{{course.pricesale}}'  name='pricesale' class='form-control' id='pricesale' />
+        </div>
+        <div class='form-group'>
+            <label for='sold' class='form-label'>Đã bán</label>
+            <input type='text'  step="any"  value='{{course.sold}}' name='sold' class='form-control' id='sold' />
+        </div>
+     
+        
+        <div class='form-group'>
+            <label for='description' class='form-label'>Mô tả</label>
+            <textarea name='description' class='form-control' id='description'>{{course.description}}</textarea>
+        </div>
+        <button type='submit' class='btn btn-primary'>Lưu</button>
+    </form>
+</div>

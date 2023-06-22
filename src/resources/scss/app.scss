@@ -1,0 +1,29 @@
+@import 'variables';
+
+.card-course-item {
+    margin-top: 16px;
+}
+img.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+p.card-text {
+    word-wrap: break-word;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    font-size: 15px;
+    line-height: 1.4;
+    margin: 8px 0;
+    overflow: hidden;
+}
+.td-image {
+    width: 20px;
+    height: 20px;
+}
+.td-image img {
+    display: block;
+    width: 134px;
+    height: 140px;
+    object-fit: contain;
+}
